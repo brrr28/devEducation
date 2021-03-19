@@ -116,7 +116,22 @@ function task2_2 (){
 // Задача №3 (Циклы) НЕ ВЫПОЛНЕНА!
 
 function task3_2(){
-    
+var n = parseInt(prompt('Введите число чтобы узнать его корень:'))
+var low = 0;
+var mid = 0;
+var high = n;
+
+while ((high-low) > 1) {
+    mid = Math.floor((high+low)/2);
+    if ((mid*mid) <= n){
+        low = mid;
+        console.log(low);
+    } else {
+        high = mid;
+        console.log(high);
+    }
+}
+console.log(low);
 }
 
 // Задача №4 (Циклы)
@@ -186,3 +201,18 @@ function maxArr () {Math.max.apply(null, arr1)};
 
 // Задача №3 
 
+if (true || console.log(5)) {
+    console.log(6);
+}
+
+if (true && console.log(10)) {
+    console.log(3);
+}
+
+if (false & console.log(10)) {
+    console.log(3);
+}
+
+if (console.log(2) & console.log(1)) {
+    console.log(10);
+}

@@ -1,28 +1,28 @@
-// function isPalindrome(str){
-//     var isPalindrome = true
-//     for (var i = 0; i < str.length; i++){
-//         if (str[i] == str[str.length - i]){
-//             isPalindrome = true
-//         }
-//         else {
-//             isPalindrome == false
-//         }
-//     }
-//     return isPalindrome
-// }
-// console.log(isPalindrome('121'));
-
-// function sumArg (num, str){
-//     var result = 0;
-//     if(num % 3 == 0 && num % 5 == 0 && num % 15 == 0){
-//         num *= -1
-//     }
-//     result = num + +str;
-//     return result;
-// } 
+function isPalindrome(str){
+    var isPalindrome = true
+    for (var i = 0; i < str.length; i++){
+        if (str[i] == str[str.length - i]){
+            isPalindrome = true
+        }
+        else {
+            isPalindrome == false
+        }
+    }
+    return isPalindrome
+}
+console.log(isPalindrome('121'));
 
 
-// console.log(sumArg(15, '5'))
+
+function sumArg (num, str){
+    var result = 0;
+    if(num % 15 == 0){
+        num *= -1
+    }
+    result = num + +str;
+    return result;
+} 
+console.log(sumArg(15, '18'))
 
 
 // План - капкан
@@ -67,5 +67,5 @@ function regularVirazheniya (str){
     } return result;
 
 }
-
 console.log(regularVirazheniya('Token - !'))
+
