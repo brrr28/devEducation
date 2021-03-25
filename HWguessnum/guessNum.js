@@ -1,7 +1,6 @@
+alert ('Привет, я загадал число от min до max вашего диапазона. Попробуй угадать его за 5 попыток')
 
-function guessNum (){ 
-        for(let i=1; i<=3; i++) {
-          alert("Кролик номер " + i);
-        }  
-}
+var num = document.querySelector('input');
+console.log(input.value);
 
+function get (){}
