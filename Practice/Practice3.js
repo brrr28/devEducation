@@ -24,13 +24,19 @@ var result = task1.reduce(function(r, o) {
 }, []);
 
 console.log(result)
+// 
+function flatArr(array) {
+    var flatArr = [];
+
+    function deep(array)
+}
 
 
 // TASK 3
-function third(arr, num) {
+function third(arr, size) {
     var newArr = [];
     while (arr.length > 0) {
-      newArr.push(arr.splice(0, num));
+      newArr.push(arr.splice(0, size));
     }
     return newArr;
 } console.log(third([1, 2, 3, 4, 5], 3))
