@@ -1,0 +1,23 @@
+{
+    "mathematic":[
+      {
+      "is 2 + 2 = 4" : "yes",
+      "i 2 + 7 = 4" : "no"
+    }
+  ],
+  "history ":[
+    {
+    "is Petro 1 was live in 12222" : "yes"
+  }
+]
+      
+    "questions" : [
+      {
+        "question-text": 
+      }
+    ]
+}
+
+for(i = 0; i < quesions.length; i++){
+  console.log()
+}
