@@ -55,3 +55,27 @@ function areEqualObj(a, b) {
     }
     return true;
 } console.log(areEqualObj({ b: 1, a: 1 }, { a: 1, b: 1 }))
+
+
+// Задача 3 (Разобрать!)
+function setArr(arr, arg){
+    var count = 0;
+    var newArr = [];
+    var indArr = [];
+    for(var i = 0; i<arr.length; ){
+
+        for(var y = 0; y<arg; y++){
+
+            indArr[y] = arr[i];
+            i++;
+            if(i === arr.length){
+                break;
+            }
+        }
+        newArr[count] = indArr;
+        indArr = [];
+        count++;
+        
+    }
+    return newArr;
+}
